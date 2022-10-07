@@ -26,30 +26,21 @@ ScrollReveal().reveal('.slide-heading, .btn-contain, .service-head, .banner-mark
     delay: 200,
     easing: 'cubic-bezier(1, 1, 0.9, 1)',
     origin: 'left',
-    opacity: 0,
-    afterReveal: function(el) {
-      ScrollReveal().clean(el);
-  }
+    opacity: 0
 })
 
 ScrollReveal().reveal('.about-title, .slide-desc, .partner-contain, .footer-right', {
     delay: 200,
     easing: 'cubic-bezier(1, 1, 0.9, 1)',
     origin: 'right',
-    opacity: 0,
-    afterReveal: function(el) {
-      ScrollReveal().clean(el);
-  }
+    opacity: 0
 })
 
 ScrollReveal().reveal('.abtract-container, .about-mark, .banner-right-inner, .contact-body, .contact-head-heading', {
     delay: 200,
     easing: 'cubic-bezier(1, 1, 0.9, 1)',
     origin: 'bottom',
-    opacity: 0,
-    afterReveal: function(el) {
-      ScrollReveal().clean(el);
-  }
+    opacity: 0
 })
 
 // capchar
