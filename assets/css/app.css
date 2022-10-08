@@ -17,6 +17,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html a {
+  text-decoration: none;
+}
+
 /* anmation class */
 
 
@@ -74,7 +78,7 @@ header {
   filter: drop-shadow(0px 0px 5px rgb(179, 255, 2)); */
 }
 
-.heder-nav-link {
+.header-nav-link {
   text-decoration: none;
   color: var(--white-color);
   text-transform: uppercase;
@@ -83,7 +87,15 @@ header {
   transition: all 0.25s ease-in;
 }
 
-.header-nav-items:hover .heder-nav-link {
+.header-nav-link.active {
+  color: var(--primary-color);
+  border: 2px solid yellow;  
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.55);
+  border-radius: 10px;
+}
+
+.header-nav-items:hover .header-nav-link {
   color: var(--primary-color);
   transition: all 0.25s ease-in;
 }
@@ -125,14 +137,14 @@ header {
   height: 100%;
 }
 
-.slide-iner {
+.slide-inner {
   width: 100%;
   position: absolute;
   top: 25%;
   z-index: 2;
 }
 
-.slide-iner h3 {
+.slide-inner h3 {
   font-size: 58px;
   font-weight: 900;
   letter-spacing: normal;
@@ -142,7 +154,7 @@ header {
 }
 
 
-.slide-iner p {
+.slide-inner p {
   margin: 20px 0;
   font-size: 16px;
   font-weight: 300;
@@ -984,4 +996,50 @@ footer .footer-logo {
 
 .footer-right-item span {
   margin-left: 12px;
+}
+
+.sub-header {
+  height: 408px;
+}
+
+.sub-header-inner {
+  text-align: center;
+  color: var(--white-color);
+  width: 100%;
+  position: absolute;
+  top: 25%;
+  z-index: 2;
+}
+
+.sub-header-inner h3 {
+  margin: 60px 0 20px;
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.sub-header-inner p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.sub-header-inner span {
+  color: #f5f5f5;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.form-group.name2,
+.form-group.email2 {
+  margin-right: 24px;
+}
+
+/* CSS for services */
+.background-static {
+  background-image: url("../../assets/img/img0.jpg");
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center ;
 }

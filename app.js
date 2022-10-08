@@ -46,12 +46,6 @@ ScrollReveal().reveal('.abtract-container, .about-mark, .banner-right-inner, .co
 // capchar
 
 
-const btnRighContact = document.getElementById('contact-right-btn');
-btnRighContact.addEventListener('click',function(){
-    console.log(1);
-    window.location.href = 'https://google.com';
-})
-
 // slick slider
 
 $(document).ready(function () {
@@ -86,3 +80,12 @@ $(document).ready(function () {
     });
   });
   
+/* Change page */
+
+const activePage =window.location.pathname;
+const navLinks = document.querySelectorAll('.header-nav-link').
+forEach(link =>{
+  if(link.href.includes(`${activePage}`)){
+    link.classList.add('active');
+  }
+})
