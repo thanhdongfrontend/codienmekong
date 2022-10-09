@@ -86,7 +86,7 @@ const activePage = window.location.pathname;
 console.log(activePage);
 const navLinks = document.querySelectorAll('.header-nav-link').
 forEach(link =>{
-  if(link.href.includes(`${activePage}`)&&link.href.includes('.html')){
+  if(link.href.includes(`${activePage}`)&&activePage.includes('.html')){
     link.classList.add('active');
   }
 })
