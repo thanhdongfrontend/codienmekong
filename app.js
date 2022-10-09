@@ -82,10 +82,11 @@ $(document).ready(function () {
   
 /* Change page */
 
-const activePage =window.location.pathname;
+const activePage = window.location.pathname;
+console.log(activePage);
 const navLinks = document.querySelectorAll('.header-nav-link').
 forEach(link =>{
-  if(link.href.includes(`${activePage}`)){
+  if(link.href.includes(`${activePage}`)&&link.href.includes('.html')){
     link.classList.add('active');
   }
 })
