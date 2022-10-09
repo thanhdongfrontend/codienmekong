@@ -1052,6 +1052,7 @@ footer .footer-logo {
 }
 
 .map-section {
+  position: relative;
   margin-bottom: 80px;
   z-index: 1;
 }
