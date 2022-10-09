@@ -663,6 +663,7 @@ header {
 .contact-body {
   position: relative;
   top: -100px;
+  z-index: 1;
 }
 
 .contact-left {
@@ -761,26 +762,28 @@ header {
   transform: translateY(-15px);
 }
 
-.contact-form {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
 
 .contact-form input {
   width: 100%;
 }
 
 .contact-right {
+  display: block;
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
   height: 100%;
   padding: 60px;
   background-color: var(--white-color);
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.contact-right form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  
 }
 
 .form-group {
@@ -1031,7 +1034,7 @@ footer .footer-logo {
 
 .form-group.name2,
 .form-group.email2 {
-  margin-right: 24px;
+  margin-right: 52px;
 }
 
 /* CSS for services */
@@ -1042,4 +1045,12 @@ footer .footer-logo {
   width: 100%;
   background-size: cover;
   background-position: center ;
+}
+
+.sub-header-about {
+  height: 500px;
+}
+
+.map-section {
+  margin-bottom: 80px;
 }

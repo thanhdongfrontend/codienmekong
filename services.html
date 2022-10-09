@@ -178,38 +178,38 @@
                 <div class="grid wide">
                     <div class="row no-gutters">
                         <div class="col l-12">
-                            <div class="contact-right" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-                                <div class="form-group name2">
-                                    <label for="">Họ tên</label>
-                                    <input type="text" id="name" placeholder="eg. John">
-                                    <span>Fullname</span>
-                                </div>
-
-
-                                <div class="form-group">
-                                    <label for="">Công ty</label>
-                                    <input type="text" id="company" placeholder="eg. MeKong">
-                                    <span>Company</span>
-                                </div>
-
-                                <div class="form-group email2">
-                                    <label for="">Địa chỉ email</label>
-                                    <input type="email" id="email" placeholder="example@example.com">
-                                    <span>Email Address</span>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="">Số điện thoại</label>
-                                    <input type="text" id="phone" placeholder="eg. 0367 264 730">
-                                    <span>Phone number</span>
-                                </div>
-                                <div class="form-group message">
-                                    <label for="">Chúng tôi có thể giúp gì cho bạn?</label>
-                                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                                    <span>Message</span>
-                                </div>
-                                <button type="submit" id="contact-right-btn" class="contact-btn-send">Gửi tin
-                                    nhắn</button>
+                            <div class="contact-right">
+                                <form action="https://sheetdb.io/api/v1/i9w5dbd8xnw24" method="post" id="sheetdb-form">
+                                    <div class="form-group name2">
+                                        <label for="">Họ tên</label>
+                                        <input type="text" id="name" placeholder="eg. John" name="data[Name]" required>
+                                        <span>Fullname</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Công ty</label>
+                                        <input type="text" id="company" placeholder="eg. MeKong" name="data[Company]" required>
+                                        <span>Company</span>
+                                    </div>
+    
+                                    <div class="form-group email2">
+                                        <label for="">Địa chỉ email</label>
+                                        <input type="email" id="email" placeholder="example@example.com" name="data[Email]" required>
+                                        <span>Email Address</span>
+                                    </div>
+    
+                                    <div class="form-group">
+                                        <label for="">Số điện thoại</label>
+                                        <input type="text" id="phone" placeholder="eg. 0367 264 730" name="data[Phone]" required>
+                                        <span>Phone number</span>
+                                    </div>
+                                    <div class="form-group message">
+                                        <label for="">Chúng tôi có thể giúp gì cho bạn?</label>
+                                        <textarea name="data[Message]" id="" cols="30" rows="10" required></textarea>
+                                        <span>Message</span>
+                                    </div>
+                                    <button type="submit" id="contact-right-btn" class="contact-btn-send">Gửi tin
+                                        nhắn</button>
+                                </form>
                             </div>
                         </div>
                     </div>

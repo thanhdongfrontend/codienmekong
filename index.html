@@ -15,7 +15,9 @@
         rel="stylesheet">
     <link rel="icon" href="./assets/img/logo.png">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -46,7 +48,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="">
+                        <a href="tel:+84367264730">
                             <button class="btn phone-btn" type="button">0367 264 730</button>
                         </a>
                     </nav>
@@ -296,10 +298,11 @@
                                 <div class="contact-left-overlay"></div>
                                 <div class="contact-left-inner">
                                     <h2>Hãy để chúng tôi phục vụ bạn</h2>
-                                    <p>Chúng tôi có những chuyên gia ITIL, chúng tôi sử dụng những bộ công cụ ITSM hàng
-                                        đầu thế giới, chúng tôi cố gắng cải tiến liên tục và sử dụng những nhân viên kỹ
+                                    <p>Chúng tôi có những nhân viên kinh nghiệm trong lĩnh vực Cơ điện, Xây dựng công
+                                        trình, lắp đặt hệ thống, chúng tôi cố gắng cải tiến liên tục và sử dụng những
+                                        nhân viên kỹ
                                         thuật giỏi và họ hạnh phúc với những gì họ làm. Chúng tôi tự tin mang đến sự hài
-                                        lòng cho khách hàng.</p>
+                                        lòng cho khách hàng. Đừng ngần ngại liên hệ với chúng tôi để có thêm nhiều thông tin và giải pháp tối ưu.</p>
                                     <ul class="contact-left-list">
                                         <li class="contact-left-item">
                                             <iconify-icon icon="fa:check"></iconify-icon>
@@ -331,37 +334,37 @@
                         </div>
                         <div class="col l-6">
                             <div class="contact-right">
-                                <div class="form-group name">
-                                    <label for="">Họ tên</label>
-                                    <input type="text" id="name" placeholder="eg. John">
-                                    <span>Fullname</span>
-                                </div>
-
-
-                                <div class="form-group">
-                                    <label for="">Công ty</label>
-                                    <input type="text" id="company" placeholder="eg. MeKong">
-                                    <span>Company</span>
-                                </div>
-
-                                <div class="form-group email">
-                                    <label for="">Địa chỉ email</label>
-                                    <input type="email" id="email" placeholder="example@example.com">
-                                    <span>Email Address</span>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="">Số điện thoại</label>
-                                    <input type="text" id="phone" placeholder="eg. 0367 264 730">
-                                    <span>Phone number</span>
-                                </div>
-                                <div class="form-group message">
-                                    <label for="">Chúng tôi có thể giúp gì cho bạn?</label>
-                                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                                    <span>Message</span>
-                                </div>
-                                <button type="submit" id="contact-right-btn" class="contact-btn-send">Gửi tin
-                                    nhắn</button>
+                                <form action="https://sheetdb.io/api/v1/i9w5dbd8xnw24" method="post" id="sheetdb-form">
+                                    <div class="form-group name">
+                                        <label for="">Họ tên</label>
+                                        <input type="text" id="name" placeholder="eg. John" name="data[Name]" required>
+                                        <span>Fullname</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Công ty</label>
+                                        <input type="text" id="company" placeholder="eg. MeKong" name="data[Company]" required>
+                                        <span>Company</span>
+                                    </div>
+    
+                                    <div class="form-group email">
+                                        <label for="">Địa chỉ email</label>
+                                        <input type="email" id="email" placeholder="example@example.com" name="data[Email]" required>
+                                        <span>Email Address</span>
+                                    </div>
+    
+                                    <div class="form-group">
+                                        <label for="">Số điện thoại</label>
+                                        <input type="text" id="phone" placeholder="eg. 0367 264 730" name="data[Phone]" required>
+                                        <span>Phone number</span>
+                                    </div>
+                                    <div class="form-group message">
+                                        <label for="">Chúng tôi có thể giúp gì cho bạn?</label>
+                                        <textarea name="data[Message]" id="" cols="30" rows="10" required></textarea>
+                                        <span>Message</span>
+                                    </div>
+                                    <button type="submit" id="contact-right-btn" class="contact-btn-send">Gửi tin
+                                        nhắn</button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -437,20 +440,22 @@
             <div class="footer-content">
                 <div class="grid wide">
                     <div class="row">
-                        <div class="col l-6">
+                        <div class="col l-6 c-12">
                             <div class="footer-left">
                                 <div>
-                                    <a href="index.html"><img class="footer-logo" src="./assets/img/logo.png" alt="footer-logo"></a>
+                                    <a href="index.html"><img class="footer-logo" src="./assets/img/logo.png"
+                                            alt="footer-logo"></a>
                                 </div>
                                 <div class="sub-heading">MeKong - Mordern Electromechanical Services</div>
                                 <div class="slogan">Mang thịnh vượng tới khách hàng</div>
                                 <div class="footer-ambition">
-                                    <span>Chúng tôi định vị để trờ thành Nhà cung cấp dịch vụ Cơ điện, điện tử hàng đầu Việt Nam và hơn thế nữa</span>
+                                    <span>Chúng tôi định vị để trờ thành Nhà cung cấp dịch vụ Cơ điện, điện tử hàng đầu
+                                        Việt Nam và hơn thế nữa</span>
                                 </div>
-                                
+
                             </div>
                         </div>
-                        <div class="col l-6">
+                        <div class="col l-6 c-12">
                             <div class="footer-right">
                                 <h2>Liên hệ với chúng tôi</h2>
                                 <div class="footer-right-item">
@@ -462,7 +467,7 @@
                                     <span>0284 357 196</span>
                                 </div>
                                 <div class="footer-right-item">
-                                    <iconify-icon  class="footer-icon" icon="clarity:email-solid"></iconify-icon>
+                                    <iconify-icon class="footer-icon" icon="clarity:email-solid"></iconify-icon>
                                     <span>hoangdangdinhtuan@codienmekong.vn</span>
                                 </div>
                                 <div class="footer-right-item">
@@ -471,7 +476,8 @@
                                 </div>
                                 <ul class="footer-social">
                                     <li class="social-media" style="background-color: #4b64a6;">
-                                        <a class="social-popup-icon" target="_blank" href="https://www.facebook.com/truongdaotaonghechuyennghiep">
+                                        <a class="social-popup-icon" target="_blank"
+                                            href="https://www.facebook.com/truongdaotaonghechuyennghiep">
                                             <i class="fab fa-facebook-f"></i>
                                         </a>
                                     </li>
@@ -490,7 +496,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
             <div class="footer-bottom">Copyright © 2022. MeKong. All Rights Reserved</div>
         </footer>
