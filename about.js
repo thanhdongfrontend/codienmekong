@@ -90,20 +90,6 @@ forEach(link =>{
   }
 })
 
-var form = document.getElementById('sheetdb-form');
-form.addEventListener("submit", e => {
-  e.preventDefault();
-  fetch(form.action, {
-      method : "POST",
-      body: new FormData(document.getElementById("sheetdb-form")),
-  }).then(
-      response => response.json()
-  ).then((html) => {
-    // you can put any JS code here
-    alert("Đã gửi tin nhắn thành công")
-  });
-});
-
 const menuIcon = document.getElementById('menu-icon')
 const menuList = document.getElementById('menu-list')
 menuIcon.addEventListener('click',function(){
