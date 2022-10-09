@@ -1053,4 +1053,5 @@ footer .footer-logo {
 
 .map-section {
   margin-bottom: 80px;
+  z-index: 1;
 }
