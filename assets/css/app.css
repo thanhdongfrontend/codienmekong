@@ -89,7 +89,7 @@ header {
 
 .header-nav-link.active {
   color: var(--primary-color);
-  border: 2px solid yellow;  
+  /* border: 2px solid var(--primary-color);   */
   padding: 12px;
   background-color: rgba(255, 255, 255, 0.55);
   border-radius: 10px;
