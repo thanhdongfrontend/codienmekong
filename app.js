@@ -109,3 +109,11 @@ const menuList = document.getElementById('menu-list')
 menuIcon.addEventListener('click',function(){
   menuList.classList.toggle('active')
 })
+
+//Loading animation
+
+var loader = document.querySelector('.preload')
+window.addEventListener('load',vanish)
+function vanish(){
+  loader.classList.add("disappear")
+}
