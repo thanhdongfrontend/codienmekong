@@ -15,6 +15,6 @@
 @keyframes vanish {
     100% {
       visibility: hidden;
-      opacity: 0.5;
+      opacity: 0.7;
     }
   }

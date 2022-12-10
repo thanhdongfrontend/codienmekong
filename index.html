@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="./assets/img/logo.png">
+    <link rel="icon" href="./assets/img/logo.ico">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -169,7 +169,7 @@
                             <div class="ambiton">
                                 <h5>Chúng tôi định vị</h5>
                                 <div>
-                                    <p>trờ thành Nhà cung cấp dịch vụ Cơ điện, điện tử hàng đầu Việt Nam và hơn thế nữa.
+                                    <p>trờ thành Nhà cung cấp dịch vụ Cơ điện hàng đầu Việt Nam và hơn thế nữa.
                                         Chúng tôi đã không
                                         ngừng nâng cao năng lực đội ngũ nhân sự, mở
                                         rộng hợp tác với các Hãng lớn của thế giới và các
@@ -358,32 +358,32 @@
                         </div>
                         <div class="col l-6 m-12 c-12">
                             <div class="contact-right">
-                                <form action="https://sheetdb.io/api/v1/i9w5dbd8xnw24" method="post" id="sheetdb-form">
+                                <form name="submit-to-google-sheet">
                                     <div class="form-group name">
                                         <label for="">Họ tên</label>
-                                        <input type="text" id="name" placeholder="eg. John" name="data[Name]" required>
+                                        <input type="text" id="name" placeholder="eg. John" name="name" required>
                                         <span>Fullname</span>
                                     </div>
                                     <div class="form-group">
                                         <label for="">Công ty</label>
-                                        <input type="text" id="company" placeholder="eg. MEKONG" name="data[Company]" required>
+                                        <input type="text" id="company" placeholder="eg. MEKONG" name="company" required>
                                         <span>Company</span>
                                     </div>
     
                                     <div class="form-group email">
                                         <label for="">Địa chỉ email</label>
-                                        <input type="email" id="email" placeholder="example@example.com" name="data[Email]" required>
+                                        <input type="email" id="email" placeholder="example@example.com" name="email" required>
                                         <span>Email Address</span>
                                     </div>
     
                                     <div class="form-group">
                                         <label for="">Số điện thoại</label>
-                                        <input type="text" id="phone" placeholder="eg. 0902 073 456" name="data[Phone]" required>
+                                        <input type="text" id="phone" placeholder="eg. 0902 073 456" name="phone" required>
                                         <span>Phone number</span>
                                     </div>
                                     <div class="form-group message">
                                         <label for="">Chúng tôi có thể giúp gì cho bạn?</label>
-                                        <textarea name="data[Message]" id="" cols="30" rows="10" required></textarea>
+                                        <textarea name="message" id="" cols="30" rows="10" required></textarea>
                                         <span>Message</span>
                                     </div>
                                     <button type="submit" id="contact-right-btn" class="contact-btn-send">Gửi tin
@@ -476,7 +476,7 @@
                                 </div>
                                 <div class="slogan">Mang thịnh vượng tới khách hàng</div>
                                 <div class="footer-ambition">
-                                    <span>Chúng tôi định vị để trờ thành Nhà cung cấp dịch vụ Cơ điện, điện tử hàng đầu
+                                    <span>Chúng tôi định vị để trờ thành Nhà cung cấp dịch vụ Cơ điện hàng đầu
                                         Việt Nam và hơn thế nữa</span>
                                 </div>
 
@@ -500,6 +500,10 @@
                                 <div class="footer-right-item">
                                     <iconify-icon class="footer-icon" icon="ant-design:mobile-filled"></iconify-icon>
                                     <span>(+84) 902 073 456</span>
+                                </div>
+                                <div class="footer-right-item">
+                                    <iconify-icon class="footer-icon" icon="mingcute:hashtag-line"></iconify-icon>
+                                    <span>MST: 0317070599</span>
                                 </div>
                                 <ul class="footer-social">
                                     <li class="social-media" style="background-color: #4b64a6;">
